@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AIPitcher - Validate Your Startup Idea</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+  <h2>🚀 AIPitcher: AI Startup Validator</h2>
+  <form method="POST">
+    <textarea name="idea" rows="5" cols="60" placeholder="Enter your startup idea here..."></textarea><br><br>
+    <button type="submit">Validate</button>
+  </form>
+  {% if output %}
+    <hr>
+    <h3>🔍 Validation Report</h3>
+    <pre>{{ output }}</pre>
+  {% endif %}
+</body>
+</html>
